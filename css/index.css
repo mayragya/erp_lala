@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;/*tipo te letra*/
+    display: flex;/*realiza el cuerpo de flex*/
+    margin: 0;
+}
+/*estilos de la interfaz de login*/
+.footerLala{
+    position: absolute;
+    width: 83%;
+    bottom: 0;
+    padding: 0;
+    right: 0;
+    margin-left: 17%;
+}
+
+.lalaBG{    
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+
+.loginBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*estilos del footer*/
+.footerText{
+    position: absolute;
+    bottom: 3%;
+    margin-left: 50%;
+    color: #eee;
+
+}
+
+/*Estilos del formulario*/
+
+.formulario-cont{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.form-img{
+   position: absolute;
+    height: 100%;
+    width: 30%;
+    border-radius: 0% 40% 0% 0%;
+    
+}
+
+.login-form{
+position: absolute;
+bottom: 20%;
+margin-left: 5%;
+}
+
+.datetimeText{
+    position: absolute;
+}
+
+.input-login{
+width: 40vh;
+height: 5vh;
+border-radius: 12px;
+margin-bottom: 20%;
+}
+
+.label-login{
+color: #eee;
+font-size: 3vh;
+}
+.login-form button{
+    width:20vh;
+    height: 10vh;
+    background-color: transparent; /* Elimina el color de fondo */
+    border: none; /* Elimina el borde del botón */
+    padding: 0; /* Elimina cualquier relleno del botón */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegúrate que la imagen no se desborde */
+    cursor: pointer; /* Cambia el cursor a "pointer" */
+    margin-left: 10vh;
+
+}
+.login-button img{
+    width: 20vh;
+    position: absolute;
+   margin-left: 2vh;
+}
+/*estilos de texto del footer*/
+
+.datetimeText{
+    bottom: 3%;
+    color: #eee;
+    margin-left: 5%;
+}
+/*estilos del texto descriptivo del sistema*/
+
+.scp{
+    font-size: 6vh;
+    align-self: flex-start;
+    
+
+}
+
+.version{   
+color: #eee;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+font-size: 4vh;
+
+}
+.subtitulo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    align-self: flex-start;
+}
+.boxText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    margin-top: 15%;
+    position: absolute;
+}
+

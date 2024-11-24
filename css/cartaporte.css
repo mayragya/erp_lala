@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;/*tipo te letra*/
+    display: flex;/*realiza el cuerpo de flex*/
+    margin: 0;
+}
+/*estilos generales del body*/
+    .cartaporteBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.lalaBG{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.footerLala{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 0;
+    padding: 0;
+    margin-left: 0%;
+    z-index: 5;
+}
+
+.headerLala{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    margin-left: 0%;
+    height: 15%;
+}
+
+.user-info{
+    opacity: 1;
+    position: absolute;
+    width: 20%;
+    height: 55%;
+    bottom: 0;
+    left: 0;
+    z-index: 3; 
+
+ }
+
+ .userName{
+    position: absolute;
+    bottom: 18%;
+    left: 7%;
+    z-index: 5;
+}
+
+.logo-lala{
+    opacity: 1;
+    position: absolute;
+    width: 6%;
+    height: 10%;
+    top: 40%;
+    left: 15%;
+    z-index: 5;
+}
+
+.button-img{
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    z-index: 5;
+    top: 20%;
+    left: 1%;
+} 
+
+.user-icon{
+    opacity: 1;
+    position: absolute;
+    width: 10%;
+    left: 4%;
+    top: 50%;
+    z-index: 5; 
+     }
+.form-column {
+    flex: 1;
+    min-width: 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.container{
+    margin-left:40%;
+    margin-top: 10%;
+    z-index: 5;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+.form-column{
+    margin-top: 10%;
+    z-index: 5;
+    
+    
+}
+
+/* Estilo de los inputs */
+.container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px; /* Bordes redondeados */
+    border: 5px solid #333; /* Grosor y color del borde */
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 15px;
+    background: #fff; /* Fondo blanco dentro del input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombras */
+} 
+ 
+.form-column input{
+    width: 30%;
+    padding: 10px;
+    border-radius: 15px; /* Bordes redondeados */
+    border: 5px solid #333; /* Grosor y color del borde */
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 15px;
+    background: #fff; /* Fondo blanco dentro del input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombras */ 
+}
+
+
+/*estilos de los textos de estatus en el sistema*/
+.headerText{ 
+    position: absolute;
+    top: 3%;
+    margin-left: 70%;
+    color: #eee;
+}
+.datetimeText{
+    bottom: 3%;
+    color: #eee;
+    position: absolute;
+    z-index: 5;
+    left: 2%;
+}
+
+.footerText{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    z-index: 5;   
+    color: #eee; 
+}
+.ip-server{
+    position: absolute;
+    top: 8%;
+    margin-left: 70%;
+    color: #eee; 
+}
+
+/*iconos de operacion con la base de datos*/
+.icon-section{
+    position: absolute;
+    right: 20px; /* Asegura que estén hacia el lado derecho */
+    top: 50%; /* Posición vertical */
+    display: flex;
+    flex-direction: column; /* Coloca los íconos en una columna */
+    align-items: center; /* Centra los íconos horizontalmente */
+    gap: 10px; /* Espaciado entre íconos */
+    transform: translateY(-50%); /* Centra verticalmente */
+
+}
+
+.icon-section img{
+width: 10vh;
+height: 10vh;
+cursor: pointer; /* Cambia el cursor al pasar el mouse */
+transition: transform 0.2s ease; /* Efecto visual al interactuar */
+}
+
+.icon-section img:hover {
+    transform: scale(1.1); /* Agranda el ícono al pasar el mouse */
+}
+
+/*estilos de la tabla*/
+.table-section{
+    position: absolute;
+    margin-top: 30%; 
+    left: 30%;
+
+}
+
+/* Tabla */
+/* Tabla */
+.data-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center; /* Centra texto en columnas */
+    font-size: 14px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezados de tabla */
+.data-table thead th {
+    background-color: #2f73b2; /* Azul oscuro */
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.data-table tr:nth-child(even) {
+    background-color: rgb(85, 123, 213); /* Color de fondo gris claro para las filas pares */
+}
+
+.data-table tr:hover {
+    background-color: rgb(127, 157, 225); /* Color de fondo gris medio al pasar el mouse sobre la fila */
+}
