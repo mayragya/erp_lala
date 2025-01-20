@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - local-network
+    volumes:
+      - ./:/var/www/html
+    command: >
+      sh -c "chmod -R 777 /var/www/html && apachectl -D FOREGROUND"
+
+  db:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"  # Permitir que root no tenga contraseña
+      MYSQL_DATABASE: erp_lala          # Nombre de la base de datos
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3308:3306"  # Cambiado a 3308 para evitar conflicto
+    networks:
+      - local-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes" # Permitir acceso sin contraseña
+    depends_on:
+      - db
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    driver: bridge
